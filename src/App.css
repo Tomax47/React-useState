@@ -36,3 +36,84 @@
     transform: rotate(360deg);
   }
 }
+
+
+/*  MY MODIFICATIONS */
+body {
+  background-color: #080808;
+}
+
+@keyframes glow {
+  0% {
+    box-shadow: 0 0 10px rgba(255, 8, 82, 0.7);
+  }
+  50% {
+    box-shadow: 0 0 20px rgba(255, 8, 82, 0.9);
+  }
+  100% {
+    box-shadow: 0 0 10px rgba(255, 8, 82, 0.7);
+  }
+}
+
+@keyframes textGlow {
+  0% {
+    text-shadow: 0 0 10px rgba(172, 4, 54, 0.7);
+  }
+  50% {
+    text-shadow: 0 0 20px rgba(179, 1, 54, 0.9);
+  }
+  100% {
+    text-shadow: 0 0 10px rgba(255, 8, 82, 0.7);
+  }
+}
+
+img {
+  width: 10rem;
+  height: 10rem;
+  border-radius: 2rem;
+  transition: all;
+}
+
+img:hover {
+  width: 11rem;
+  height: 11rem;
+  background-color: #fff;
+  animation: glow 2s infinite alternate;
+  transition-duration: .5s;
+}
+
+.albums-div {
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  padding: 0.5rem;
+  margin: 1rem;
+}
+
+h3 {
+  font-size: 8rem;
+  color: rgb(226, 226, 226);
+  font-weight: bold;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  transition: color;
+}
+
+h3:hover {
+  color: rgba(129, 0, 39, 0.7);
+  transition-duration: 2s;
+}
+
+h1 {
+  font-size: 20rem;
+  font-weight: bold;
+  color: rgb(255, 8, 82);
+  animation: textGlow 3s infinite alternate;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+p {
+  font-size: 1rem;
+  color: rgb(226, 226, 226);
+  font-weight: 400;
+  font-family: 'Courier New', Courier, monospace;
+}
